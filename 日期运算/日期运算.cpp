@@ -28,11 +28,11 @@ void Cdate::arithmetic()
 	{
 		a[2] = 29;
 	}
-	if (day < a[year])
+	if (day < a[month])
 	{
 		day += 1;
 	}
-	else if (day = a[year])
+	else if (day = a[month])
 	{
 		if (month < 12)
 		{
@@ -50,7 +50,7 @@ void Cdate::arithmetic()
 }
 void Cdate::display()
 {
-	cout << year << month << day << endl;
+	cout << year <<"Äê"<< month <<"ÔÂ"<< day <<"ÈÕ"<< endl;
 }
 int main()
 {
